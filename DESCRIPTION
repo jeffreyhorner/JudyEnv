@@ -1,0 +1,11 @@
+Package: JudyEnv
+Type: Package
+Title: Environments hashed with Judy Arrays
+Version: 0.1-1
+Date: 2015-02-03
+Author: Jeffrey Horner <jeffrey.horner@gmail.com>
+Maintainer: Jeffrey Horner <jeffrey.horner@gmail.com>
+Description: JudyEnv utilizes variable bindings and objects of class
+ "UserDefinedDatabase" to provide an R environment hashed with Judy Arrays.
+License: GPL2
+LazyLoad: yes

@@ -1,0 +1,2 @@
+PKG_LIBS = -L/usr/local/lib -lJudy
+PKG_CFLAGS = -DJUDYERROR_NOTEST -I/usr/local/include
