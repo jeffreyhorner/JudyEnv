@@ -1,0 +1,22 @@
+2003 paper on incorporating Judy tables into erlang ETS -
+  http://www.erlang.se/workshop/2003/paper/p43-fritchie.pdf
+
+2013 Blog post comparing JudyL tables to finely tuned integer hash -
+  http://preshing.com/20130107/this-hash-table-is-faster-than-a-judy-array/
+
+2010 Blog post comparing JudyL again
+  http://rusty.ozlabs.org/?p=153
+
+2013 Blog comment on the above promoting hat-trie
+  https://github.com/dcjones/hat-trie
+
+2003  Another blog
+  http://www.nothings.org/computer/judy/
+
+2012 Reddit thread on the above
+
+  http://www.reddit.com/r/programming/comments/fp02l/how_judy_arrays_work_and_why_they_are_so_fast/
+
+Alternatives
+
+Tommyds - https://github.com/amadvance/tommyds
