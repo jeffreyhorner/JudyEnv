@@ -41,9 +41,12 @@ for( size in 2^(10:15) ) {
 
   J <- JudyEnv()
 
+  n <- new.env(hash=FALSE)
+
   print(microbenchmark(
     `nativecons` = for (i in 1:size) assign(keys[i],values[i],envir=e),
-    `JudyEncons` = for (i in 1:size) assign(keys[i],values[i],envir=J)
+    `JudyEncons` = for (i in 1:size) assign(keys[i],values[i],envir=J),
+    `nohashcons` = for (i in 1:size) assign(keys[i],values[i],envir=n)
   ))
 
   # CREATE KEYS TO LOOK UP:
@@ -51,7 +54,8 @@ for( size in 2^(10:15) ) {
   
   print(microbenchmark(
     `nativelook` = for (k in ke) y = get(k,envir=e),
-    `JudyEnlook` = for (k in ke) y = get(k,envir=J)
+    `JudyEnlook` = for (k in ke) y = get(k,envir=J),
+    `nohashlook` = for (k in ke) y = get(k,envir=n)
   ))
 
 }
